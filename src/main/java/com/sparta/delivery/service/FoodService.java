@@ -45,8 +45,7 @@ public class FoodService  {
         });
     }
 
-    // jpa구문 2개이상 (논리 연산과정 2개이상은 @Transactional 을 해줘라 - 걍 1개 있어도 @Transactional 붙이자
-    // 똑같은 id면 캐쉬에 담아져 있는거 그대로 가져와서 db에 안넣어진다. 그러므로 @Transactional이 필요하다.
+
     // 메뉴판 조회
     @Transactional
     public List<Food> getRestaurantFoodList(Long restaurantId){
