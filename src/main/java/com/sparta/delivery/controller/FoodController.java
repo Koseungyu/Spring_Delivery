@@ -14,8 +14,7 @@ public class FoodController {
 
     private final FoodService foodService;
 
-    // 반환 타입이 ResponseEntity<Object>가 아니라 void 여도 통과.
-    // assertNull 을 맞추려면 ResponseEntity<Object>으로 반환해라
+
     // 음식 등록
     @PostMapping("/restaurant/{restaurantId}/food/register")
     public void registerFoodAndRestaurantId(@PathVariable Long restaurantId, @RequestBody List<FoodDto> foodDto){
